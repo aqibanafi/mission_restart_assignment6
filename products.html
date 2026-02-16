@@ -63,12 +63,24 @@
     <section id="product-grid" class="grid grid-cols-4 gap-5 container mx-auto">
 
     </section>
-
-
-
-
-
-
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box relative">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle absolute right-2 top-2 z-50">✕</button>
+            </form>
+            <div class="border rounded-lg shadow-lg card flex flex-col h-full bg-white">
+                <div id="img-holder" class="h-64 p-4 flex justify-center items-center bg-gray-50 rounded-t-lg">
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
+                    <div class="mb-5 flex-grow">
+                        <p id="product-title" class="font-semibold text-lg line-clamp-2 h-[56px] leading-tight mb-2">
+                        </p>
+                        <p id="product-price" class="font-bold text-2xl text-[#4f39f6]"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
     <script src="script/script.js"></script>
 </body>
 
