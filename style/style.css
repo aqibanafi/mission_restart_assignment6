@@ -9,6 +9,7 @@
     --background-color: #e0e7ff;
     --section-bg: #f9fafb;
     --card-corner: #e5e7eb;
+    --footer-color: #1e2939;
 }
 
 .logo {
@@ -44,4 +45,14 @@
 
 .card {
     border-color: var(--card-corner);
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: rgb(199, 199, 199);
+    padding: 50px;
+}
+
+.section-gap {
+    margin-bottom: 100px;
 }
