@@ -1,4 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #4f39f6;
+    --background-color: #e0e7ff;
+    --section-bg: #f9fafb;
+}
+
+.logo {
+    color: var(--primary-color)
+}
+
+#hero {
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.4) 80%,
+            rgba(0, 0, 0, 0) 100%),
+        url('/Assets/banner-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.delivery-inner {
+    background-color: var(--background-color);
+}
+
+#why-choose-us {
+    background-color: var(--section-bg);
 }

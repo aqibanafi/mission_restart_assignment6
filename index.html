@@ -1,34 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Cart</title>
-    <!-- CSS integration  -->
-    <link rel="stylesheet" href="/style/style.css">
-    <!-- Font Awesome integration  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Daisy UI integration  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swift Cart</title>
+  <!-- CSS integration  -->
+  <link rel="stylesheet" href="/style/style.css" />
+  <!-- Font Awesome integration  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Daisy UI integration  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="script/script.js"></script>
+  <!-- Navbar section  -->
+  <header>
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Products</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl logo">SwiftCart</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Products</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-ghost"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar section  -->
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="container mx-auto">
+      <div class="mb-5">
+        <h1 class="text-6xl font-semibold text-white mb-2">Best Collection for You</h1>
+        </h1>
+        <p class="text-xl text-gray-300 font-normal">
+          Discover the latest trend in fashion, eletronics and more. Shop with <br>
+          confidence and style at Swiftcart
+        </p>
+      </div>
+      <div>
+        <button class="btn btn-primary">Shop Now</button>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section  -->
+  <!-- Why Choose Us  -->
+  <section id="why-choose-us py-[60px]">
+    <div class="container mx-auto">
+      <div class="flex flex-col items-center">
+        <div class="flex flex-col justify-center items-center gap-2 mb-[80px]">
+          <h2 class="text-3xl font-semibold">Why Choose Us</h2>
+          <p class="font-normal text-slate-600">We provide the best shopping experience with top-notch service</p>
+        </div>
+        <!-- Card container  -->
+        <div class="grid grid-cols-4 gap-5">
+          <!-- Single Card  -->
+          <div class="shadow-md p-5 rounded-lg relative">
+            <!-- make absolute position  -->
+            <div class="rounded w-20 p-1 shadow-lg mb-[20px] absolute bottom-32">
+              <div class="delivery-inner rounded">
+                <i class="fa-regular fa-truck p-5"></i>
+              </div>
+            </div>
+            <!-- make absolute position  -->
+            <div class="py-[30px]">
+              <h3 class="font-medium">Fast Delivery</h3>
+              <p class="from-neutral-200">Get your orders delivered to your doorstep quickly and efficiently</p>
+            </div>
+          </div>
+          <!-- --------------------------- -->
+          <!-- Single Card  -->
+          <div class="shadow-md p-5 rounded-lg relative">
+            <!-- make absolute position  -->
+            <div class="rounded w-20 p-1 shadow-lg mb-[20px] absolute bottom-32">
+              <div class="delivery-inner rounded">
+                <i class="fa-regular fa-truck p-5"></i>
+              </div>
+            </div>
+            <!-- make absolute position  -->
+            <div class="py-[30px]">
+              <h3 class="font-medium">Fast Delivery</h3>
+              <p class="from-neutral-200">Get your orders delivered to your doorstep quickly and efficiently</p>
+            </div>
+          </div>
+          <!-- -------------------------------- -->
+          <!-- Single Card  -->
+          <div class="shadow-md p-5 rounded-lg relative">
+            <!-- make absolute position  -->
+            <div class="rounded w-20 p-1 shadow-lg mb-[20px] absolute bottom-32">
+              <div class="delivery-inner rounded">
+                <i class="fa-regular fa-truck p-5"></i>
+              </div>
+            </div>
+            <!-- make absolute position  -->
+            <div class="py-[30px]">
+              <h3 class="font-medium">Fast Delivery</h3>
+              <p class="from-neutral-200">Get your orders delivered to your doorstep quickly and efficiently</p>
+            </div>
+          </div>
+          <!-- ------------------------------------ -->
+          <!-- Single Card  -->
+          <div class="shadow-md p-5 rounded-lg relative">
+            <!-- make absolute position  -->
+            <div class="rounded w-20 p-1 shadow-lg mb-[20px] absolute bottom-32">
+              <div class="delivery-inner rounded">
+                <i class="fa-regular fa-truck p-5"></i>
+              </div>
+            </div>
+            <!-- make absolute position  -->
+            <div class="py-[30px]">
+              <h3 class="font-medium">Fast Delivery</h3>
+              <p class="from-neutral-200">Get your orders delivered to your doorstep quickly and efficiently</p>
+            </div>
+          </div>
+          <!-- Card Container  -->
+        </div>
+      </div>
+  </section>
+  <!-- Why choose us  -->
+  <script src="script/script.js"></script>
 </body>
 
 </html>
