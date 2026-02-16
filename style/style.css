@@ -56,3 +56,7 @@ footer {
 .section-gap {
     margin-bottom: 100px;
 }
+
+.p-button {
+    border-color: var(--card-corner);
+}
