@@ -8,6 +8,7 @@
     --primary-color: #4f39f6;
     --background-color: #e0e7ff;
     --section-bg: #f9fafb;
+    --card-corner: #e5e7eb;
 }
 
 .logo {
@@ -34,4 +35,13 @@
 
 #why-choose-us {
     background-color: var(--section-bg);
+}
+
+.tag {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.card {
+    border-color: var(--card-corner);
 }
