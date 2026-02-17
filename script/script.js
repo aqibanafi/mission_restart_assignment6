@@ -118,8 +118,12 @@ const displayModalData = product => {
     imageHolder.innerHTML = `<img class="max-h-full object-contain" src="${product.image}" alt="">`
     const productTitle = document.getElementById('product-title');
     const productPrice = document.getElementById('product-price');
+    const productDescription = document.getElementById('product-description');
+    const productRating = document.getElementById('product-rating');
     productTitle.innerHTML = product.title;
-    productPrice.innerHTML = product.price;
+    productPrice.innerHTML = `$${product.price}`;
+    productDescription.innerHTML = product.description;
+    productRating.innerHTML = product.rating.rate
 }
 
 // Trending Products 
