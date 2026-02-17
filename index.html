@@ -29,8 +29,8 @@
             </svg>
           </div>
           <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><a>Home</a></li>
-            <li><a>Products</a></li>
+            <li class="active-page"><a>Home</a></li>
+            <li><a href="products.html">Products</a></li>
             <li><a>About</a></li>
             <li><a>Contact</a></li>
           </ul>
@@ -39,8 +39,8 @@
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>Products</a></li>
+          <li class="active-page"><a>Home</a></li>
+          <li><a href="products.html">Products</a></li>
           <li><a>About</a></li>
           <li><a>Contact</a></li>
         </ul>
@@ -53,12 +53,13 @@
   <!-- Navbar section  -->
   <!-- Hero Section  -->
   <section id="hero" class="section-gap">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-5 lg:px-0 flex flex-col items-center lg:items-start">
       <div class="mb-5">
-        <h1 class="text-6xl font-semibold text-white mb-2">Best Collection for You</h1>
+        <h1 class="text-3xl lg:text-6xl text-center lg:text-justify font-semibold text-white mb-2">Best Collection for
+          You</h1>
         </h1>
-        <p class="text-xl text-gray-300 font-normal">
-          Discover the latest trend in fashion, eletronics and more. Shop with <br>
+        <p class="text-lg lg:text-xl text-center lg:text-justify lg:w-4/6 text-gray-300 font-normal">
+          Discover the latest trend in fashion, eletronics and more. Shop with
           confidence and style at Swiftcart
         </p>
       </div>
@@ -69,15 +70,16 @@
   </section>
   <!-- Hero Section  -->
   <!-- Why Choose Us  -->
-  <section id="why-choose-us py-[60px]" class="section-gap">
+  <section id="why-choose-us py-[60px]" class="section-gap px-5 lg:px-0">
     <div class="container mx-auto">
       <div class="flex flex-col items-center">
         <div class="flex flex-col justify-center items-center gap-2 mb-[80px]">
           <h2 class="text-3xl font-semibold">Why Choose Us</h2>
-          <p class="font-normal text-slate-600">We provide the best shopping experience with top-notch service</p>
+          <p class="font-normal text-slate-600 text-center">We provide the best shopping experience with top-notch
+            service</p>
         </div>
         <!-- Card container  -->
-        <div class="grid grid-cols-4 gap-5">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-[100px] lg:gap-5">
           <!-- Single Card  -->
           <div class="shadow-md p-5 rounded-lg relative">
             <!-- make absolute position  -->
@@ -150,10 +152,11 @@
       </div>
   </section>
   <!-- Why choose us  -->
-  <section class="container mx-auto section-gap">
+  <!-- Trending Now  -->
+  <section class="container mx-auto section-gap px-5 lg:px-0">
     <h2 class="text-3xl font-semibold mb-5">Trending Now</h2>
     <!-- Card Container  -->
-    <div id="trending" class="grid grid-cols-3 gap-5">
+    <div id="trending" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
       <!-- Product card  -->
       <div class="border rounded-lg shadow-lg card">
         <div>
@@ -224,7 +227,7 @@
   <!-- Why Choose us  -->
   <!-- Footer  -->
   <footer>
-    <div class="footer p-10 flex container mx-auto">
+    <div class="footer lg:p-10 container mx-auto grid grid-cols-1 lg:grid-cols-4">
       <div class="flex-2">
         <a class="text-xl font-bold logo">SwiftCart</a>
         <p>Your one-stop shop for all your fashion and lifestyle needs. Quality products, fast delivery, and

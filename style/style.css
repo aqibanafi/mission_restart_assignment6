@@ -60,3 +60,8 @@ footer {
 .p-button {
     border-color: var(--card-corner);
 }
+
+.active-page {
+    color: var(--primary-color);
+    font-weight: 700;
+}

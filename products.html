@@ -31,7 +31,8 @@
                     </div>
                     <ul tabindex="-1"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active-page"><a>Home</a></li>
                         <li><a>Products</a></li>
                         <li><a>About</a></li>
                         <li><a>Contact</a></li>
@@ -41,8 +42,8 @@
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Products</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active-page"><a>Products</a></li>
                     <li><a>About</a></li>
                     <li><a>Contact</a></li>
                 </ul>
@@ -52,17 +53,52 @@
             </div>
         </div>
     </header>
-    <section class="container mx-auto mb-[30px] flex flex-col items-center">
+    <section class="container mx-auto mb-[30px] flex flex-col items-center px-5 lg:px-0">
         <h2 class="text-3xl font-semibold mb-3">Our Products</h2>
-        <div>
-            <ul id="categories" class="flex gap-2">
+        <div class="">
+            <ul id="categories" class="flex flex-wrap gap-2">
             </ul>
         </div>
     </section>
     <!-- All Product card section  -->
-    <section id="product-grid" class="grid grid-cols-4 gap-5 container mx-auto">
+    <section id="product-grid" class="grid grid-cols-1 lg:grid-cols-4 gap-5 container mx-auto px-5 lg:px-0 mb-[100px]">
 
     </section>
+    <!-- Footer  -->
+    <footer>
+        <div class="footer lg:p-10 container mx-auto grid grid-cols-1 lg:grid-cols-4">
+            <div class="flex-2">
+                <a class="text-xl font-bold logo">SwiftCart</a>
+                <p>Your one-stop shop for all your fashion and lifestyle needs. Quality products, fast delivery, and
+                    excellent
+                    support.</p>
+            </div>
+            <nav class="flex-1">
+                <h6 class="footer-title">QUICK LINKS</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">Products</a>
+                <a class="link link-hover">About</a>
+                <a class="link link-hover">Contact</a>
+            </nav>
+            <nav class="flex-1">
+                <h6 class="footer-title">SUPPORT</h6>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Shipping</a>
+                <a class="link link-hover">Returns</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </nav>
+            <form class="flex-1">
+                <h6 class="footer-title">Newsletter</h6>
+                <fieldset class="w-80">
+                    <label>Enter your email address</label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                        <button class="btn btn-primary join-item">Subscribe</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </footer>
     <dialog id="my_modal_3" class="modal">
         <div class="modal-box relative">
             <form method="dialog">
