@@ -15,6 +15,7 @@ const fetchAllData = async () => {
 
 const displayAllData = data => {
     const container = document.getElementById('product-grid')
+    if (!container) return
     container.innerHTML = "";
     data.map(product => {
         const createDiv = document.createElement('div');
@@ -36,7 +37,7 @@ const displayAllData = data => {
 
         <div class="flex justify-between gap-3 mt-auto">
             <button onclick="fetchModalData(${product.id})" class="btn btn-outline flex-1 py-2 rounded-md"><i class="fa-regular fa-eye"></i> Detail</button>
-            <button class="btn btn-primary flex-1 py-2 rounded-md"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+            <button onclick="addToCart(${product.id})" class="btn btn-primary flex-1 py-2 rounded-md"><i class="fa-solid fa-cart-shopping"></i> Add</button>
         </div>
     </div>
 </div>
@@ -47,7 +48,8 @@ const displayAllData = data => {
 
 const displayCategories = data => {
     const listContainer = document.getElementById('categories');
-    listContainer.innerHTML = "";
+    if (!listContainer) return
+    listContainer.innerHTML = " ";
     const allButton = document.createElement('li');
     allButton.innerHTML = `<li onclick="fetchAllData()" class="btn btn-ghost border py-2 px-5 rounded-2xl p-button">All</li>`
     listContainer.appendChild(allButton)
@@ -69,7 +71,7 @@ const fetchAllProduct = async category => {
     displayAllProducts(data);
 }
 const displayAllProducts = data => {
-    const container = document.getElementById('product-grid')
+    const container = document.getElementById('product-grid');
     container.innerHTML = "";
     data.map(product => {
         const createDiv = document.createElement('div');
@@ -91,7 +93,7 @@ const displayAllProducts = data => {
 
         <div class="flex justify-between gap-3 mt-auto">
             <button onclick="fetchModalData(${product.id})" class="btn btn-outline flex-1 py-2 rounded-md"><i class="fa-regular fa-eye"></i> Detail</button>
-            <button class="btn btn-primary flex-1 py-2 rounded-md"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+            <button onclick="addToCart(${product.id})" class="btn btn-primary flex-1 py-2 rounded-md"><i class="fa-solid fa-cart-shopping"></i> Add</button>
         </div>
     </div>
 </div>
@@ -139,9 +141,9 @@ const fetchTrendingData = async () => {
 
 const displayTrendingData = data => {
     const container = document.getElementById('trending')
+    if (!container) return
     container.innerHTML = "";
     const topThree = data.slice(0, 3)
-    console.log(topThree)
     topThree.map(product => {
         const createDiv = document.createElement('div');
         createDiv.innerHTML = `
@@ -172,5 +174,7 @@ const displayTrendingData = data => {
 }
 
 
+
 getCategories()
 fetchTrendingData()
+fetchAllData()
